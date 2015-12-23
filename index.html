@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FII Practic 2016 - Code challenge</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="css/arii.css">
+    <!--[if IE 7]><link rel="stylesheet" href="css/arii-ie7.css"><![endif]-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="ui container">
+        <div class="logo">
+            <a href="/">
+                <img src="images/logo.png" alt="FII Practic Logo" />
+            </a>
+        </div>
+        <ul class="links">
+            <li><a href=""><i class="icon calendar"></i>Program</a></li><li><a href=""><i class="icon cloud"></i>Arii de studiu</a></li><li><a href=""><i class="icon text telephone"></i>Contact</a></li>
+        </ul>
+        <div class="logRegister">
+            <button class="ui teal basic button"><i class="icon puzzle"></i> Conecteaza-te</button>
+            <button class="ui teal button"><i class="icon student"></i> Inscrie-te</button>
+        </div>
+        <div class="responsive-menu">
+            <div class="ui text menu">
+                <div class="ui right dropdown item">
+                    <button class="ui icon large teal button"><i class="icon sidebar"></i></button>
+                    <div class="menu">
+                        <a class="teal item">
+                            Program
+                        </a>
+                        <a class="item active">
+                            Arii de studiu
+                        </a>
+                        <a class="item">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</header>
+<section id="top">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="six wide column">
+                <div class="ui form formInscriere">
+                    <h2 class="ui header">Inscrie-te pentru FII Practic 2016!</h2>
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Nume..." />
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email..." />
+                    </div>
+                    <div class="field">
+                        <input class="last" type="password" name="password" placeholder="Parola..." />
+                    </div>
+                    <div class="field">
+                        <button class="ui submit button teal">INSCRIE-TE</button>
+                    </div>
+                    <span>Te-ai inregistrat deja? <a class="switchForms" data-formOld="formInscriere" data-form="formConecteaza" href="#conecteaza-te">Conecteaza-te.</a></span>
+                </div>
+                <div class="ui form formConecteaza">
+                    <h2 class="ui header">Ai deja cont? Mai jos te poti conecta!</h2>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email..." />
+                    </div>
+                    <div class="field">
+                        <input class="last" type="password" name="password" placeholder="Parola..." />
+                    </div>
+                    <div class="field">
+                        <button class="ui submit button teal">CONNECTEAZA-TE</button>
+                    </div>
+                    <span>Nu ai cont? <a class="switchForms" data-formOld="formConecteaza" data-form="formInscriere" href="#inregistreaza-te">Inregistreaza-te.</a></span>
+                </div>
+            </div>
+            <div class="ten wide column">
+                <img src="images/indexBg.png" alt="Graphic" class="vectorGraphic" />
+                <div class="continutGraph"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="despre">
+    <div class="ui container">
+        <div class="centered buttons">
+            <div class="ui massive teal icon button" data-content="Esti interesat de hackathon-ul nostru? Click aici!">
+                <i class="icon code"></i>
+                Hackathon
+            </div>
+            <div class="ui massive icon button" data-content="Aici chiar nu stiu despre ce e vorba :D">
+                <i class="icon trophy text"></i>
+                Conferance
+            </div>
+        </div>
+        <h2 class="ui header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi leo, interdum quis ornare et ...</h2>
+        <div class="ui stackable grid">
+            <div class="eight wide column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi leo, interdum quis ornare et, viverra eget nibh. Nullam elit ante, tincidunt sit amet tempor nec, viverra in neque. Quisque dictum massa nunc, non vestibulum turpis sagittis non. Morbi egestas, mauris at consectetur maximus, erat sem euismod lorem, nec dignissim nisi metus eu orci. </p>
+            </div>
+            <div class="eight wide column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi leo, interdum quis ornare et, viverra eget nibh. Nullam elit ante, tincidunt sit amet tempor nec, viverra in neque. Quisque dictum massa nunc, non vestibulum turpis sagittis non. Morbi egestas, mauris at consectetur maximus, erat sem euismod lorem, nec dignissim nisi metus eu orci. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="parteneri">
+    <div class="ui container">
+        <h2 class="ui horizontal divider header">
+            <i class="icon users"></i>
+            Parteneri
+        </h2>
+        <img src="images/parteneri/uaic.png" alt="UAIC" />
+        <img src="images/parteneri/fii_stema.png" alt="FII" />
+    </div>
+</section>
+<footer>
+    <div class="ui container">
+        Copyright &copy; Asociatia Studentilor Informaticieni Ieseni (ASII) | Facultatea de Informatica din Iasi (FII) | FII Practic 2016
+        <br />
+        <a href="">Home</a>
+        <a href="">Contact</a>
+        <a href="">F.A.Q</a>
+        <a href="">Sitemap</a>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="semantic/semantic.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/requests.js"></script>
+</body>
+</html>

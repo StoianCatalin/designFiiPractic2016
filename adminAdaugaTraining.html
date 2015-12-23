@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FII Practic 2016 - Code challenge</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="css/arii.css">
+    <!--[if IE 7]><link rel="stylesheet" href="css/arii-ie7.css"><![endif]-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="mainPanel">
+    <div class="ui grid">
+        <div class="three wide column">
+            <div class="ui inverted segment panel">
+                <div class="logo">
+                    <img src="images/logoInverted.png" alt="Logo FiiPractic" />
+                </div>
+                <div class="ui inverted vertical menu">
+                    <a class="item">
+                        Training-urile mele
+                        <i class="icon puzzle"></i>
+                    </a>
+                    <a class="item">
+                        Adauga Training
+                        <i class="icon write"></i>
+                    </a>
+                    <a class="item">
+                        Inapoi la website
+                        <i class="icon world"></i>
+                    </a>
+                    <a class="item">
+                        Logout
+                        <i class="icon power"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="thirteen wide column">
+            <h2 class="ui header">Adauga Training</h2>
+            <div class="ui segment">
+                <div class="ui container">
+                    <div class="ui form">
+                        <div class="field">
+                            <label>Nume training</label>
+                            <input placeholder="Nume training" type="text">
+                        </div>
+                        <div class="field">
+                            <label>Descriere</label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="field">
+                            <label>Arie</label>
+                            <select class="ui search dropdown selecteazaArie">
+                                <option value="">Arii de studiu...</option>
+                                <option>Front End Development</option>
+                                <option>Back End Development</option>
+                                <option>Design Graphic</option>
+                                <option>Android Pro</option>
+                                <option>Game Development</option>
+                                <option>DevOps</option>
+                                <option>Project Management</option>
+                                <option>Communication Skills</option>
+                                <option>Management Antreprenorial</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Numar locuri</label>
+                            <input placeholder="Numar locuri" type="text">
+                        </div>
+                        <div class="intrebariFields">
+                            <div class="field">
+                                <label>Intrebare 1</label>
+                                <input placeholder="Intrebare 1" type="text">
+                            </div>
+                            <div class="clearfloat"></div>
+                        </div>
+                        <button class="ui leftFloat labeled icon green button adaugaIntrebare">
+                            <i class="icon add"></i>
+                            Adauga intrebare
+                        </button>
+                        <button class="ui rightFloat labeled icon blue button">
+                            <i class="icon send"></i>
+                            Adauga Training
+                        </button>
+                        <div class="clearfloat"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="semantic/semantic.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/requests.js"></script>
+<script>
+    $('.panel').css('height', $(window).height()+"px");
+    $('.panel').css('width', $('#mainPanel .three.wide.column').width());
+    $('.trainBut button').popup();
+    $('.selecteazaArie').dropdown();
+</script>
+</body>
+</html>
